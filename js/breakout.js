@@ -93,6 +93,7 @@ console.log(bricks)
 
 // Draw everything
 function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
     drawPaddle()
     drawBall()
     drawScore()
@@ -101,8 +102,33 @@ function draw() {
 
 // Move paddle on canvas
 function movePaddle() {
-    
+    paddle.x = paddle.x + paddle.dx
 }
+
+// Wall detection
+
+
+// Keydown Event
+function keyDown(e) {
+    // console.log(e.key)
+    if (e.key == 'ArrowRight' || e.key == 'Right') {
+        paddle.dx = paddle.speed
+    }
+    if (e.key == 'ArrowLeft' || e.key == 'Left') {
+        paddle.dx = -paddle.speed
+    }
+}
+
+// Keyup Event
+function keyUp(e) {
+    if (e.key == 'ArrowRight' || e.key == 'Right' || e.key == 'ArrowLeft' || e.key == 'Left') {
+        paddle.dx = 0
+    }
+}
+
+// Keyboard event handlers
+document.addEventListener('keydown', keyDown)
+document.addEventListener('keyup', keyUp)
 
 
 // Update canvas drawing and animation
