@@ -191,10 +191,6 @@ function moveBall() {
             }
         })
     })
-
-    // lose if hit bottom wall
-    if (ball.y + ball.size > canvas)
-
 }
 
 // increase score
