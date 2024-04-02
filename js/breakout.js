@@ -155,6 +155,7 @@ function moveBall() {
     // wall collision (bottom)
     if (ball.y + ball.size  > canvas.height) {
         ball.dy = -1 * ball.dy
+        showAllBricks()
     }
 
     // wall collision (left)
@@ -182,13 +183,35 @@ function moveBall() {
                 ){
                     ball.dy = -1 * ball.dy
                     brick.visible = false
+                    increaseScore()
                 }
 
             }
         })
     })
+
+    // lose if hit bottom wall
+    if (ball.y + ball.size > canvas)
+
 }
 
+// increase score
+function increaseScore(){
+    score++ // score = score + 1
+
+    if (score == brickRowCount * brickColumnCount) {
+        score = 0
+        showAllBricks()
+    }
+}
+
+function showAllBricks(){
+    brick.forEach(column => {
+        column.forEach(brick => {
+            brick.visible = true
+        })
+    })
+}
 
 
 // Update canvas drawing and animation
