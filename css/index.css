@@ -1,7 +1,23 @@
 
 body {
     margin: 0;
-    background-color: rgb(128, 57, 55);
+    background-color: white;
+    overflow: hidden;
+}
+
+.hero {
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: -2;
 }
 
 .head {
@@ -10,12 +26,7 @@ body {
     align-items: center;
     text-align: center;
     position: relative;
-    padding: 5px;
-    background-color: rgb(232, 210, 193);
-    width: 50vh;
-    left: 87vh;
-    border-radius: 5px;
-    padding: 15px;
+
 }
 
 .project {
@@ -24,19 +35,14 @@ body {
     align-items: center;
     text-align: center;
     position: relative;
-    padding: 5px;
-    background-color: rgb(232, 210, 193);
-    width: 50vh;
-    height: 50vh;
-    left: 87vh;
-    border-radius: 5px;
-    padding: 15px;
+    padding: 5px;;
+    height: 78px;
     text-decoration: none;
 }
 
 .nav {
     position: fixed;
-    background-color: rgb(5, 15, 51);
+    background-color: rgb(128, 57, 55);
     top: 0;
     left: 0;
     right: 0;
@@ -46,8 +52,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
-    transition: all 0.3s ease-in-out;
+    padding: 8px 0;
+
 }
 
 .nav ul {
@@ -55,25 +61,16 @@ body {
     list-style-type: none;
     align-items: center;
     justify-content: center;
+
 }
 
 .nav a {
     color: white;
     text-decoration: none;
     padding: 7px 15px;
-    transition: all 0.3s ease-in-out;
-}
-
-.nav li {
-    font-size: 20px;
-    font-family: "Anta", sans-serif;
-}
-
-.nav h1 {
-    font-family: "Anta", sans-serif;
 }
 
 .nav a:hover {
-    color: rgb(152, 161, 245);
+    color: rgb(232, 210, 193);
 
 }
