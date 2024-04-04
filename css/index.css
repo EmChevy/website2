@@ -33,7 +33,8 @@ body {
     align-items: center;
     text-align: center;
     position: relative;
-    padding: 15px;
+    padding: 10px;
+    text-decoration: underline;
 }
 
 .project a {
@@ -67,12 +68,12 @@ body {
 }
 
 .nav a {
-    color: rgb(232, 210, 193);
+    color: rgb(245, 232, 223);
     text-decoration: none;
     padding: 7px 15px;
 }
 
 .nav a:hover {
-    color: white;
+    color: rgb(232, 210, 193);
 
 }
