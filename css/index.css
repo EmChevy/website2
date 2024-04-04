@@ -6,12 +6,13 @@ body {
 }
 
 .hero {
-    background-image: url(sunset_mountain.jpg);
+    background-image: url(images/sunset_mountain.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
     height: 100vh;
     display: flex;
+    color: white;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -20,7 +21,7 @@ body {
 }
 
 .head {
-    color: rgb(79, 24, 23);
+    color: rgb(232, 210, 193);
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -28,15 +29,10 @@ body {
 
 }
 
-.project {
+.project a {
     color: rgb(79, 24, 23);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    padding: 5px;;
-    height: 78px;
     text-decoration: none;
+
 }
 
 .nav {
