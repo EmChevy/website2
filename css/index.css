@@ -33,7 +33,7 @@ body {
     align-items: center;
     text-align: center;
     position: relative;
-
+    padding: 15px;
 }
 
 .project a {
@@ -67,12 +67,12 @@ body {
 }
 
 .nav a {
-    color: white;
+    color: rgb(232, 210, 193);
     text-decoration: none;
     padding: 7px 15px;
 }
 
 .nav a:hover {
-    color: rgb(232, 210, 193);
+    color: white;
 
 }
