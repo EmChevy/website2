@@ -13,6 +13,14 @@ body {
     padding: 5px;
     background-color: rgb(232, 210, 193);
     width: 50vh;
-    left: 
+    left: 87vh;
+    border-radius: 5px;
+    padding: 15px;
+}
 
+.project {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
 }
