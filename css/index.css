@@ -28,7 +28,7 @@ body {
 }
 
 .head {
-    color: rgb(128, 57, 55);
+    color: rgb(245, 232, 223);
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -37,7 +37,7 @@ body {
 }
 
 .project a {
-    color: rgb(128, 57, 55);
+    color: rgb(245, 232, 223);
     text-decoration: none;
 
 }
