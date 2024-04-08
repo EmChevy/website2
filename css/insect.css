@@ -97,7 +97,7 @@ h1 {
 .score {
     position: absolute;
     top: 20px;
-    left: 20px;
+    right: 20px;
 }
 
 .message {
@@ -117,5 +117,5 @@ h1 {
 
 .message.visible {
     transform: translate(-50%, 150%);
-    
+
 }
