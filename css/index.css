@@ -23,6 +23,9 @@ body {
 .logo a {
     text-decoration: none;
     color: white;
+    background-color: #718396;
+    padding: 10px;
+    
 }
 
 .container h1 {
