@@ -8,7 +8,7 @@
 
 body {
     margin: 0;
-    background-color: green;
+    background-color: #5D6D7E;
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,9 +19,6 @@ body {
     align-items: center;
     text-align: center;
 }
-
-
-
 
 .logo a {
     text-decoration: none;
@@ -40,4 +37,6 @@ body {
     color: white;
     text-decoration: none;
 }
+
+
 
