@@ -41,22 +41,23 @@ body {
 
 .head {
     font-size: 21px;
+    text-decoration: underline;
 }
 
 .project-breakout {
-    padding: 21px;
+    padding: 22px;
 }
 
 .project-insect {
-    padding: 21px;
+    padding: 22px;
 }
 
 .project-hangman {
-    padding: 21px;
+    padding: 22px;
 }
 
 .project-typing {
-    padding: 21px;
+    padding: 22px;
 }
 
 .breakout .circle-btn {
