@@ -36,10 +36,27 @@ body {
 .container h3 a {
     color: white;
     text-decoration: none;
+
+}
+
+.head {
+    font-size:
 }
 
 .project-breakout {
-    top: 250px;
+    padding: 21px;
+}
+
+.project-insect {
+    padding: 21px;
+}
+
+.project-hangman {
+    padding: 21px;
+}
+
+.project-typing {
+    padding: 21px;
 }
 
 .breakout .circle-btn {
@@ -48,7 +65,7 @@ body {
     color: white;
     border: 0;
     left: 500px;
-    top: 250px;
+    top: 200px;
     cursor: pointer;
     transition: transform 3s ease;
 }
@@ -59,7 +76,7 @@ body {
     color: white;
     border: 0;
     left: 500px;
-    top: 330px;
+    top: 280px;
     cursor: pointer;
     transition: transform 3s ease;
 }
@@ -70,7 +87,7 @@ body {
     color: white;
     border: 0;
     left: 500px;
-    top: 410px;
+    top: 360px;
     cursor: pointer;
     transition: transform 3s ease;
 }
@@ -81,7 +98,7 @@ body {
     color: white;
     border: 0;
     left: 498px;
-    top: 490px;
+    top: 440px;
     cursor: pointer;
     transition: transform 3s ease;
 }
