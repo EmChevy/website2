@@ -36,8 +36,8 @@ body {
 }
 
 .container h3 a {
-    color: white;
     text-decoration: none;
+    color: white;
 
 }
 
@@ -67,7 +67,8 @@ body {
     background-color: #5D6D7E;
     color: white;
     border: 0;
-    left: 500px;
+    width: 160px;
+    left: 600px;
     top: 200px;
     cursor: pointer;
     transition: transform 3s ease;
@@ -78,7 +79,8 @@ body {
     background-color: #5D6D7E;
     color: white;
     border: 0;
-    left: 500px;
+    width: 120px;
+    left: 620px;
     top: 280px;
     cursor: pointer;
     transition: transform 3s ease;
@@ -89,7 +91,7 @@ body {
     background-color: #5D6D7E;
     color: white;
     border: 0;
-    left: 500px;
+    left: 660px;
     top: 360px;
     cursor: pointer;
     transition: transform 3s ease;
@@ -100,8 +102,29 @@ body {
     background-color: #5D6D7E;
     color: white;
     border: 0;
-    left: 498px;
+    width: 210px;
+    left: 575px;
     top: 440px;
     cursor: pointer;
     transition: transform 3s ease;
+}
+
+.breakout.active .circle-btn {
+    transform: translateX(-220px);
+}
+
+.insect.active .bug-btn {
+    transform: translateX(-220px);
+}
+
+.hangman.active .man-btn {
+    transform: translateX(-220px);
+}
+
+.typing.active .keyboard-btn {
+    transform: translateX(-220px);
+}
+
+.container.active h3 a {
+    color: white;
 }
