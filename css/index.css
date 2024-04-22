@@ -150,6 +150,16 @@ body {
     color: white;
 }
 
-/* .breakout .circle-btn:hover {
-    color: #d3e0ed;
-} */
+.breakout .circle-btn:hover {
+    color: #dfeaf5;
+}
+
+.insect .bug-btn:hover {
+    color: #dfeaf5;
+}
+.hangman .man-btn:hover {
+    color: #dfeaf5;
+}
+.typing .keyboard-btn:hover {
+    color: #dfeaf5;
+}

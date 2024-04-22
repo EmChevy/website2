@@ -1,8 +1,8 @@
 const wordE1 = document.getElementById('word')
 wrongLettersE1 = document.getElementById('wrong-letters')
-const playAgainBtn = document.get.ElementById('play-again')
+const playAgainBtn = document.getElementById('play-again')
 const popup = document.getElementById('popup-container')
-const notification = doucment.getElementById('notification-container')
+const notification = document.getElementById('notification-container')
 const finalMessage = document.getElementById('final-message')
 const figureParts = document.querySelectorAll('.figure-part')
 
@@ -27,7 +27,13 @@ function displayWord() {
     }
     `
 
-    
+    const innerWord = wordE1.innerText.replace(/\n/g, '')
+
+    if (innerWord == selectedWord) {
+        finalMessage.innerText = 'Congratulations! You won!'
+        popup.style.display = 'flex'
+    }
+
 }
 
 displayWord()
