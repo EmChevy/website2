@@ -27,6 +27,10 @@ body {
     padding: 10px;
 }
 
+.logo a:hover {
+    color: #d3e0ed;
+}
+
 .container h1 {
     color: white;
 }
@@ -62,6 +66,22 @@ body {
     padding: 22px;
 }
 
+.project-breakout a:hover {
+    color: #d3e0ed;
+}
+
+.project-insect a:hover {
+    color: #d3e0ed;
+}
+
+.project-hangman a:hover {
+    color: #d3e0ed;
+}
+
+.project-typing a:hover {
+    color: #d3e0ed;
+}
+
 .breakout .circle-btn {
     position: absolute;
     background-color: #5D6D7E;
@@ -91,7 +111,8 @@ body {
     background-color: #5D6D7E;
     color: white;
     border: 0;
-    left: 660px;
+    width: 210px;
+    left: 575px;
     top: 360px;
     cursor: pointer;
     transition: transform 3s ease;
@@ -128,3 +149,7 @@ body {
 .container.active h3 a {
     color: white;
 }
+
+/* .breakout .circle-btn:hover {
+    color: #d3e0ed;
+} */
