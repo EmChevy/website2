@@ -94,4 +94,7 @@ window.addEventListener('keydown', e => {
     }
 })
 
+// Restart game and play again
+playAgainBtn.addEventListener('click')
+
 displayWord()
