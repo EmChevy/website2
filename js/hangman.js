@@ -1,6 +1,6 @@
 const wordE1 = document.getElementById('word')
 wrongLettersE1 = document.getElementById('wrong-letters')
-const playAgainBtn = document.getElementById('play-again')
+const playAgainBtn = document.getElementById('play-button')
 const popup = document.getElementById('popup-container')
 const notification = document.getElementById('notification-container')
 const finalMessage = document.getElementById('final-message')
@@ -99,7 +99,15 @@ playAgainBtn.addEventListener('click', () => {
     correctLetters.length = 0
     wrongLetters.length = 0
 
-    selectedIndex = 
+    selectedIndex = Math.floor(word.length * Math.random())
+    selectedWord = word[selectedIndex]
+
+    displayWord()
+
+    updateWrongLetters()
+
+    popup.style.display = 'none'
+
 })
 
 displayWord()
