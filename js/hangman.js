@@ -95,6 +95,11 @@ window.addEventListener('keydown', e => {
 })
 
 // Restart game and play again
-playAgainBtn.addEventListener('click')
+playAgainBtn.addEventListener('click', () => {
+    correctLetters.length = 0
+    wrongLetters.length = 0
+
+    selectedIndex = 
+})
 
 displayWord()
