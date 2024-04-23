@@ -37,10 +37,26 @@ function displayWord() {
 
 // Update the wrong letters
 function updateWrongLettersE1() {
+    // Display wrong letters
     wrongLettersE1.innerHTML = `
-    ${wrongLetters.length > 0 ? '<P>Wrong</p>' : ''}
-    
+        ${wrongLetters.length > 0 ? '<P>Wrong</p>' : ''}
+        ${wrongLetters.map(letter => `<span>${letter}</span>`)}
     `
+    // Display parts
+    figureParts.forEach((part, index) => {
+        const errors = wrongLetters.length
+
+        if (index < errors) {
+            part.style.display = 'block'
+        } else {
+            part.style.display = 'none'
+        }
+    })
+
+    // Check if lost
+    if (wrongLetters.length == figureParts.length) {
+
+    }
 }
 
 // Show Notification
