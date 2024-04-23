@@ -88,7 +88,7 @@ window.addEventListener('keydown', e => {
     } else {
         if (!wrongLetters.includes(letter)) {
             wrongLetters.push(letter)
-
+            console.log("WRONG LETTER")
             updateWrongLettersE1()
         } else {
             showNotification()
