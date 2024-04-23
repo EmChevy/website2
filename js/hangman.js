@@ -75,14 +75,16 @@ window.addEventListener('keydown', e => {
     console.log(wrongLetters)
     if (e.keyCode >= 65 && e.keyCode <= 90) {
         const letter = e.key
+        if (selectedWord.includes(letter)) {
+            if (!correctLetters.includes(letter)) {
+                correctLetters.push(letter)
 
-        if (!correctLetters.includes(letter)) {
-            correctLetters.push(letter)
-
-            displayWord()
-        } else {
-            showNotification()
+                displayWord()
+            } else {
+                showNotification()
+            }
         }
+
     } else {
         if (!wrongLetters.includes(letter)) {
             wrongLetters.push(letter)
