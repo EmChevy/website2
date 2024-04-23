@@ -37,7 +37,10 @@ function displayWord() {
 
 // Update the wrong letters
 function updateWrongLettersE1() {
-    console.log('Update Wrong')
+    wrongLettersE1.innerHTML = `
+    ${wrongLetters.length > 0 ? '<P>Wrong</p>' : ''}
+    
+    `
 }
 
 // Show Notification
@@ -54,6 +57,8 @@ function showNotification() {
 window.addEventListener('keydown', e => {
 
     if (e.keyCode >= 65 && e.keyCode <= 90) {
+        const letter = e.key
+
         if (!correctLetters.includes(letter)) {
             correctLetters.push(letter)
 
