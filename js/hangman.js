@@ -12,7 +12,7 @@ let selectedIndex = Math.floor(word.length * Math.random())
 let selectedWord = word[selectedIndex]
 
 const correctLetters = []
-const wrongLetters = []
+const wrongLetters = ['h']
 
 // Show hidden word
 function displayWord() {
@@ -72,7 +72,7 @@ function showNotification() {
 
 // Keydown letter press
 window.addEventListener('keydown', e => {
-
+    console.log(wrongLetters)
     if (e.keyCode >= 65 && e.keyCode <= 90) {
         const letter = e.key
 
