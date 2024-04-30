@@ -88,7 +88,7 @@ body {
     color: white;
     border: 0;
     width: 160px;
-    left: 600px;
+    left: 93vh;
     top: 200px;
     cursor: pointer;
     transition: transform 3s ease;
@@ -100,7 +100,7 @@ body {
     color: white;
     border: 0;
     width: 120px;
-    left: 620px;
+    left: 95.2vh;
     top: 280px;
     cursor: pointer;
     transition: transform 3s ease;
@@ -112,7 +112,7 @@ body {
     color: white;
     border: 0;
     width: 210px;
-    left: 575px;
+    left: 90.5vh;
     top: 360px;
     cursor: pointer;
     transition: transform 3s ease;
@@ -124,7 +124,7 @@ body {
     color: white;
     border: 0;
     width: 210px;
-    left: 575px;
+    left: 90.5vh;
     top: 440px;
     cursor: pointer;
     transition: transform 3s ease;

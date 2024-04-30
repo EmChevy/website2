@@ -12,7 +12,7 @@ let selectedIndex = Math.floor(word.length * Math.random())
 let selectedWord = word[selectedIndex]
 
 const correctLetters = []
-const wrongLetters = ['h']
+const wrongLetters = []
 
 // Show hidden word
 function displayWord() {
