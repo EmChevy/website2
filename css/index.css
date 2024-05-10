@@ -118,7 +118,7 @@ body {
     transition: transform 3s ease;
 }
 
-.typing .keyboard-btn {
+/* .typing .keyboard-btn {
     position: absolute;
     background-color: #5D6D7E;
     color: white;
@@ -128,7 +128,7 @@ body {
     top: 440px;
     cursor: pointer;
     transition: transform 3s ease;
-}
+} */
 
 .breakout.active .circle-btn {
     transform: translateX(-220px);
