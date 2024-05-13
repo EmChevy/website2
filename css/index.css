@@ -62,9 +62,9 @@ body {
     padding: 22px;
 }
 
-.project-typing {
+/* .project-typing {
     padding: 22px;
-}
+} */
 
 .project-breakout a:hover {
     color: #d3e0ed;
@@ -78,9 +78,9 @@ body {
     color: #d3e0ed;
 }
 
-.project-typing a:hover {
+/* .project-typing a:hover {
     color: #d3e0ed;
-}
+} */
 
 .breakout .circle-btn {
     position: absolute;
@@ -142,9 +142,9 @@ body {
     transform: translateX(-220px);
 }
 
-.typing.active .keyboard-btn {
+/* .typing.active .keyboard-btn {
     transform: translateX(-220px);
-}
+} */
 
 .container.active h3 a {
     color: white;
@@ -160,6 +160,6 @@ body {
 .hangman .man-btn:hover {
     color: #dfeaf5;
 }
-.typing .keyboard-btn:hover {
+/* .typing .keyboard-btn:hover {
     color: #dfeaf5;
-}
+} */
