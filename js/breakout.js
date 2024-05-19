@@ -53,7 +53,7 @@ function createBricks() {
     }
 }
 
-createBricks();
+createBricks()
 
 // Draw ball on canvas
 function drawBall() {
@@ -93,7 +93,7 @@ function drawBricks() {
     })
 }
 
-console.log(bricks)
+//console.log(bricks)
 
 
 // Draw everything
