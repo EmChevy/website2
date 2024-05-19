@@ -169,7 +169,7 @@ function moveBall() {
     // wall collision (left)
     //if (ball.x + ball.size < 0) {
         //ball.dx = -1 * ball.dx
-    
+
 
     // paddle collision
     if (
@@ -247,7 +247,7 @@ function startGame() {
 
 function stopGame() {
     clearInterval(gameInterval)
-    showAllBricks()
+    //showAllBricks()
 }
 
 // Rules open and close
