@@ -76,3 +76,8 @@ h1 {
     top: 30px;
     right: 30px;
 }
+
+.home-btn a {
+    color: white;
+    text-decoration: none;
+}
