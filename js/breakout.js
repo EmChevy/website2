@@ -220,13 +220,15 @@ function showAllBricks(){
     })
 }
 
+let gameInterval
+
 
 // Update canvas drawing and animation
 function update() {
     moveBall()
     movePaddle()
     draw()
-    requestAnimationFrame(update)
+    //requestAnimationFrame(update)
 }
 
 update()
