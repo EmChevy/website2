@@ -1,4 +1,5 @@
 rulesBtn = document.getElementById('rules-btn')
+startBtn = document.getElementById('start-btn')
 rules = document.getElementById('rules')
 closeBtn = document.getElementById('close-btn')
 canvas = document.getElementById('canvas')

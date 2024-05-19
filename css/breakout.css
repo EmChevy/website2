@@ -64,3 +64,9 @@ h1 {
 .rules.show {
     transform: translateX(0);
 }
+
+.start-btn {
+    position: absolute;
+    top: 30px;
+    left: 150px;
+}
