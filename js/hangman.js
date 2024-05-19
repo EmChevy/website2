@@ -1,4 +1,4 @@
-const wordE1 = document.getElementById('word')
+const wordEl = document.getElementById('word')
 const wrongLettersEl = document.getElementById('wrong-letters')
 const playAgainBtn = document.getElementById('play-button')
 const popup = document.getElementById('popup-container')
@@ -16,7 +16,7 @@ const wrongLetters = []
 
 // Show hidden word
 function displayWord() {
-    wordE1.innerHTML = `
+    wordEl.innerHTML = `
     ${selectedWord
         .split('')
         .map(letter => `
@@ -27,7 +27,7 @@ function displayWord() {
     }
     `
 
-    const innerWord = wordE1.innerText.replace(/\n/g, '')
+    const innerWord = wordEl.innerText.replace(/\n/g, '')
 
     if (innerWord == selectedWord) {
         finalMessage.innerText = 'Congratulations! You won!'
@@ -89,7 +89,7 @@ window.addEventListener('keydown', e => {
         if (!wrongLetters.includes(letter)) {
             wrongLetters.push(letter)
             console.log("WRONG LETTER")
-            updateWrongLettersE1()
+            updateWrongLettersEl()
         } else {
             showNotification()
         }
