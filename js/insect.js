@@ -73,10 +73,28 @@ function addInsects() {
 
 function increaseScore() {
     score++
-    if (score > 19) {
-        message.classList.add('visible')
-    }
+    //if (score > 19) {
+        //message.classList.add('visible')
+    //}
+    //scoreE1.innerHTML = `Score: ${score}`
     scoreE1.innerHTML = `Score: ${score}`
+    if (score === 60) {
+        clearInterval(timerInterval)
+        displayMessage('You won!')
+    }
+
+}
+
+function checkGameOver() {
+    if (seconds >= 30 && score < 60) {
+        clearInterval(timerInterval)
+        displayMessage('You lost!')
+    }
+}
+
+function displayMessage(text) {
+    message.innerHTML = text
+    message.classList.add('visible')
 }
 
 
