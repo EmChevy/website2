@@ -159,7 +159,7 @@ function moveBall() {
 
     // wall collision (bottom)
     if (ball.y + ball.size  > canvas.height ) {
-        ball.dy = -1 * ball.dy
+        //ball.dy = -1 * ball.dy
         stopGame();
         return;
         //showAllBricks()
@@ -169,10 +169,6 @@ function moveBall() {
     // wall collision (left)
     //if (ball.x + ball.size < 0) {
         //ball.dx = -1 * ball.dx
-    }
-
-    if (ball.y + ball.size > canvas.height) {
-        stopGame();
     }
 
     // paddle collision
