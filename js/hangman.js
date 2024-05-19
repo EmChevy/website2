@@ -72,7 +72,8 @@ function showNotification() {
 
 // Keydown letter press
 window.addEventListener('keydown', e => {
-    console.log(wrongLetters)
+    //console.log(wrongLetters)
+
     if (e.keyCode >= 65 && e.keyCode <= 90) {
         const letter = e.key
         if (selectedWord.includes(letter)) {
@@ -83,7 +84,7 @@ window.addEventListener('keydown', e => {
             } else {
                 showNotification()
             }
-        }
+
 
     } else {
         if (!wrongLetters.includes(letter)) {
