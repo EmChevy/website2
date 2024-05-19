@@ -171,6 +171,10 @@ function moveBall() {
         //ball.dx = -1 * ball.dx
     }
 
+    if (ball.y + ball.size > canvas.height) {
+        stopGame();
+    }
+
     // paddle collision
     if (
         ball.x - ball.size > paddle.x &&
@@ -180,10 +184,6 @@ function moveBall() {
         ball.dy = -1 * ball.speed
     }
 
-    if (ball.y + ball.size > canvas.height) {
-        stopGame();
-        return;
-    }
 
     // Brick collision
     bricks.forEach(column => {
