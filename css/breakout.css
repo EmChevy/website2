@@ -71,4 +71,8 @@ h1 {
     left: 150px;
 }
 
-
+.home-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
