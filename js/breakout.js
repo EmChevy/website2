@@ -199,14 +199,14 @@ function moveBall() {
             }
         })
     })
-}
+
 
 // increase score
 function increaseScore(){
     score++ // score = score + 1
 
     if (score == brickRowCount * brickColumnCount) {
-        stopGame();
+        stopGame()
         //score = 0
         //showAllBricks()
     }
@@ -232,19 +232,19 @@ function update() {
 update()
 
 function startGame() {
-    score = 0;
-    ball.x = canvas.width / 2;
-    ball.y = canvas.height / 2;
-    ball.dx = 4;
-    ball.dy = -4;
-    paddle.x = canvas.width / 2 - paddle.w / 2;
-    createBricks();
-    gameInterval = setInterval(update, 20);
+    score = 0
+    ball.x = canvas.width / 2
+    ball.y = canvas.height / 2
+    ball.dx = 4
+    ball.dy = -4
+    paddle.x = canvas.width / 2 - paddle.w / 2
+    createBricks()
+    gameInterval = setInterval(update, 20)
 }
 
 function stopGame() {
-    clearInterval(gameInterval);
-    showAllBricks();
+    clearInterval(gameInterval)
+    showAllBricks()
 }
 
 // Rules open and close
