@@ -153,13 +153,15 @@ function moveBall() {
     }
 
     // wall collision (right)
-    if (ball.x + ball.size > canvas.width) {
+    if (ball.x + ball.size > canvas.width || ball.x - ball.size < 0) {
         ball.dx = -1 * ball.dx
     }
 
     // wall collision (bottom)
-    if (ball.y + ball.size  > canvas.height || ball.x - ball.size < 0) {
+    if (ball.y + ball.size  > canvas.height ) {
         ball.dy = -1 * ball.dy
+        stopGame();
+        return;
         //showAllBricks()
         //score = 0
     }
