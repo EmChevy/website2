@@ -1,5 +1,5 @@
 const wordE1 = document.getElementById('word')
-wrongLettersE1 = document.getElementById('wrong-letters')
+wrongLettersEl = document.getElementById('wrong-letters')
 const playAgainBtn = document.getElementById('play-button')
 const popup = document.getElementById('popup-container')
 const notification = document.getElementById('notification-container')
@@ -36,9 +36,9 @@ function displayWord() {
 }
 
 // Update the wrong letters
-function updateWrongLettersE1() {
+function updateWrongLettersEl() {
     // Display wrong letters
-    wrongLettersE1.innerHTML = `
+    wrongLettersEl.innerHTML = `
         ${wrongLetters.length > 0 ? '<P>Wrong</p>' : ''}
         ${wrongLetters.map(letter => `<span>${letter}</span>`)}
     `
@@ -106,7 +106,7 @@ playAgainBtn.addEventListener('click', () => {
 
     displayWord()
 
-    updateWrongLettersE1()
+    updateWrongLettersEl()
 
     popup.style.display = 'none'
 
