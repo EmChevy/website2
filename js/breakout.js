@@ -169,7 +169,7 @@ function moveBall() {
     // wall collision (left)
     //if (ball.x + ball.size < 0) {
         //ball.dx = -1 * ball.dx
-    }
+    
 
     // paddle collision
     if (
@@ -199,6 +199,7 @@ function moveBall() {
             }
         })
     })
+}
 
 
 // increase score
