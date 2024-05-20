@@ -9,6 +9,7 @@ let seconds = 0
 let score = 0
 let selected_insect = {}
 let timerInterval
+let gameActive = true
 
 start_btn.addEventListener('click', () => {
     screens[0].classList.add('up')
@@ -46,6 +47,7 @@ function increaseTime() {
 }
 
 function createInsect() {
+    if (!gameActive) return
     const insect = document.createElement('div')
     insect.classList.add('insect')
     const { x, y } = getRandomLocation()
@@ -59,6 +61,7 @@ function createInsect() {
 
 
 function catchInsect() {
+    if (!gameActive) return
     increaseScore()
     this.classList.add('caught')
     setTimeout(() => this.remove(), 2000)
