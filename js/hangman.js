@@ -13,6 +13,7 @@ let selectedWord = word[selectedIndex]
 
 const correctLetters = []
 const wrongLetters = []
+let isGameOver = false
 
 // Show hidden word
 function displayWord() {
@@ -32,6 +33,7 @@ function displayWord() {
     if (innerWord == selectedWord) {
         finalMessage.innerText = 'Congratulations! You won!'
         popup.style.display = 'flex'
+        isGameOver = true
     }
 }
 
@@ -55,8 +57,9 @@ function updateWrongLettersEl() {
 
     // Check if lost
     if (wrongLetters.length == figureParts.length) {
-        finalMessage.innerText = 'Unfortunately you lost!'
+        finalMessage.innerText = 'Unfortunately you lost! The word was: ${selectedWord}'
         popup.style.display = 'flex'
+        isGameOver = true
     }
 }
 
@@ -73,6 +76,7 @@ function showNotification() {
 // Keydown letter press
 window.addEventListener('keydown', e => {
     //console.log(wrongLetters)
+    if (isGameOver) return
 
     if (e.keyCode >= 65 && e.keyCode <= 90) {
         const letter = e.key
@@ -100,6 +104,7 @@ window.addEventListener('keydown', e => {
 
 // Restart game and play again
 playAgainBtn.addEventListener('click', () => {
+    isGameOver = false
     correctLetters.length = 0
     wrongLetters.length = 0
 
