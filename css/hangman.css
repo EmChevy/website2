@@ -125,3 +125,13 @@ h1 {
     transform: translateY(-50px);
 }
 
+.home-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.home-btn a {
+    color: #34495e;
+    text-decoration: none;
+}
