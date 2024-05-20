@@ -79,16 +79,16 @@ function increaseScore() {
     //scoreE1.innerHTML = `Score: ${score}`
     scoreE1.innerHTML = `Score: ${score}`
     if (score === 60) {
-        //clearInterval(timerInterval)
-        displayMessage('You won!')
+        clearInterval(timerInterval)
+        endGame('You won!')
     }
 
 }
 
 function checkGameOver() {
     if (seconds >= 30 && score < 60) {
-        //clearInterval(timerInterval)
-        displayMessage('You lost!')
+        clearInterval(timerInterval)
+        endGame('You lost!')
     }
 }
 
